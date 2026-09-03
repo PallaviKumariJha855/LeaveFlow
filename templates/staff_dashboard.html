@@ -1,0 +1,94 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Staff Dashboard</title>
+
+<link rel="stylesheet"
+href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+
+<nav>
+
+    <h1>LeaveFlow</h1>
+
+    <a href="{% url 'logout' %}">
+        Logout
+    </a>
+
+</nav>
+
+
+
+<div class="container">
+
+
+    <div class="hero">
+
+        <h1>
+            Welcome, {{request.user.username}} 👋
+        </h1>
+
+        <p>
+            Manage your leave requests with ease.
+        </p>
+
+    </div>
+
+
+
+    <div class="dashboard">
+
+
+        <div class="dashboard-card">
+
+            <h3>📅 Apply Leave</h3>
+
+            <p>
+                Submit a new leave application.
+            </p>
+
+            <a href="{% url 'apply_leave' %}">
+                Apply
+            </a>
+
+        </div>
+
+
+
+        <div class="dashboard-card">
+
+            <h3>📄 My Leave Status</h3>
+
+            <p>
+                Track all your leave requests and their status.
+            </p>
+
+            <a href="{% url 'my_leaves' %}">
+                View
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</body>
+
+</html>

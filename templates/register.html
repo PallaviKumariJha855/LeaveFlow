@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaveFlow Registration</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="hero">
+            <h1>LeaveFlow</h1>
+            <p>Create your account to access the Staff Leave Management System.</p>
+        </div>
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            <h2 style="text-align:center; margin-bottom:20px;">
+                Register
+            </h2>
+
+            <label>Username</label>
+            <input
+                type="text"
+                name="username"
+                placeholder="Enter Username"
+                required>
+
+            <label>Password</label>
+            <input
+                type="password"
+                name="password"
+                placeholder="Enter Password"
+                required>
+
+            <label>Role</label>
+
+            <select name="role" required>
+
+                <option value="">Select Role</option>
+
+                <option value="admin">
+                    Admin
+                </option>
+
+                <option value="staff">
+                    Staff
+                </option>
+
+            </select>
+
+            <p style="margin:15px 0; text-align:center;">
+                Admins can manage staff and approve leave requests.
+            </p>
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+        <div class="footer">
+
+            <p>
+                Already have an account?
+            </p>
+
+            <a href="{% url 'login' %}">
+                Login
+            </a>
+
+            <a href="{% url 'home' %}">
+                Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

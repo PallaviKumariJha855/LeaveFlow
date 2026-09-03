@@ -1,0 +1,121 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        LeaveFlow | Staff Leave Management System
+    </title>
+
+    <link rel="stylesheet"
+    href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Welcome to LeaveFlow...</h1>
+        <div class="hero">
+
+            <h1>LeaveFlow</h1>
+
+            <p>
+                Smart Staff Leave Management System
+            </p>
+
+            <p>
+                Simplify leave management for administrators and employees
+with an efficient, secure and user-friendly platform.
+            </p>
+
+
+            <a href="{% url 'login' %}">
+                Login
+            </a>
+
+
+            <a href="{% url 'register' %}">
+                Register
+            </a>
+
+        </div>
+
+
+
+        <div class="dashboard">
+
+
+            <div class="dashboard-card">
+
+                <h3>
+                    Apply Leave
+                </h3>
+
+                <p>
+                    Submit leave applications quickly and
+                    efficiently.
+                </p>
+
+            </div>
+
+
+
+            <div class="dashboard-card">
+
+                <h3>
+                    Track Leave Status
+                </h3>
+
+                <p>
+                    View pending, approved and rejected
+                    leave requests in real time.
+                </p>
+
+            </div>
+
+
+
+            <div class="dashboard-card">
+
+                <h3>
+                    Staff Management
+                </h3>
+
+                <p>
+                    Administrators can manage employee
+                    records and leave applications easily.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <footer class="footer">
+
+            <p>
+                &copy; 2026 LeaveFlow. All Rights Reserved.
+            </p>
+
+            <p>
+                Smart Staff Leave Management System
+            </p>
+
+        </footer>
+
+
+    </div>
+
+</body>
+</html>

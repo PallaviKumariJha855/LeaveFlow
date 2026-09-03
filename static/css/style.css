@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+    padding:30px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+            135deg,
+            #1e293b,
+            #6c8ec6,
+            #0f172a);
+
+    background-attachment:fixed;
+
+}
+
+
+
+/*----------------HEADINGS----------------*/
+
+
+h1,h2,h3,h4,h5{
+
+    color:#111827;
+    margin-bottom:20px;
+    text-align:center;
+
+}
+
+
+h1{
+
+    font-size:50px;
+    font-weight:700;
+
+}
+
+
+h2{
+
+    font-size:40px;
+    font-weight:700;
+
+}
+
+
+h3{
+
+    font-size:28px;
+
+}
+
+
+p{
+
+    color:rgb(166, 161, 161);
+    line-height:1.8;
+    text-align:center;
+    text-transform: capitalize;
+
+}
+
+
+/*----------------CONTAINER----------------*/
+
+
+.container{
+
+    width:100%;
+    max-width:1300px;
+
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+
+
+
+/*----------------NAVBAR----------------*/
+
+
+nav{
+
+    width:100%;
+    max-width:1300px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 40px;
+
+    background:
+    rgba(255,255,255,.25);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.15);
+
+    margin-bottom:50px;
+
+}
+
+
+nav h1{
+
+    color:white;
+    font-size:32px;
+
+}
+
+
+
+nav h1{
+
+
+    color:white;
+    font-size:32px;
+
+}
+
+
+
+/*----------------BUTTONS----------------*/
+
+
+button{
+
+
+    padding:15px 35px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:15px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #4338ca,
+    #6366f1);
+
+
+    transition:.4s;
+
+    box-shadow:
+    0 15px 30px
+    rgba(79,70,229,.3);
+
+
+}
+
+
+button:hover{
+
+
+    transform:
+    translateY(-6px);
+
+    letter-spacing:1px;
+
+
+    box-shadow:
+    0 20px 50px
+    rgba(79,70,229,.4);
+
+}
+
+
+
+/*----------------LINK BUTTONS----------------*/
+
+
+a{
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    margin:10px;
+
+    display:inline-block;
+
+    color:white;
+
+    font-weight:600;
+
+    border-radius:15px;
+
+
+    background:
+    linear-gradient(
+    135deg,
+    #4338ca,
+    #6366f1);
+
+
+    transition:.4s;
+
+
+}
+
+
+a:hover{
+
+
+    transform:
+    translateY(-5px);
+
+    box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.2);
+
+}
+
+
+
+/*----------------HOME PAGE----------------*/
+
+
+.hero{
+
+    width:65%;
+    max-width:700px;
+
+    padding:20px 30px;
+
+    margin:auto;
+    text-align:center;
+
+    background:white;
+
+    border-radius:35px;
+
+    box-shadow:
+    0 25px 60px
+    rgba(0,0,0,.2);
+
+}
+
+
+.hero h1{
+
+
+    font-size:55px;
+    color:#4f46e5;
+    margin-bottom: 10px;
+
+
+}
+
+
+.hero p{
+
+
+    font-size:20px;
+    margin:0px;
+
+}
+
+
+.hero a{
+
+    min-width:180px;
+
+}
+
+.hero:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+
+/*----------------CARDS----------------*/
+
+
+.card{
+
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.15);
+
+
+}
+
+
+
+.dashboard{
+
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,
+    minmax(330px,1fr));
+
+
+    gap:30px;
+
+    margin-top:40px;
+
+
+}
+
+
+.dashboard-card{
+
+
+    /* min-height:70px; */
+    height: 80%;
+    width: 90%;
+
+    padding:45px;
+
+    text-align:center;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    background:white;
+
+    border-radius:30px;
+
+    transition:.4s;
+
+    box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.15);
+
+
+}
+
+
+.dashboard-card:hover{
+
+
+    transform:
+
+    translateY(-15px)
+    scale(1.03);
+
+
+}
+
+
+.dashboard-card p{
+
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+/*----------------FORMS----------------*/
+
+
+form{
+
+
+    width:600px;
+    max-width:100%;
+
+    margin:15px auto;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:35px;
+
+    background:
+    rgba(255,255,255,.95);
+
+
+    box-shadow:
+    0 30px 70px
+    rgba(0,0,0,.2);
+
+
+}
+
+
+form label{
+
+
+    text-align:left;
+
+    font-weight:600;
+
+    display:block;
+
+    margin-top:5px;
+
+}
+
+
+form button{
+
+
+    width:100%;
+    margin-top:5px;
+
+}
+
+
+input,
+select,
+textarea{
+
+
+    width:100%;
+
+    padding:18px;
+
+    margin-top:2px;
+
+    border-radius:15px;
+
+    border:none;
+
+    outline:none;
+
+    background:#f5f7fb;
+
+    font-size:16px;
+
+    transition:.4s;
+
+
+}
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+
+    border:2px solid #4f46e5;
+
+    box-shadow:
+    0 0 20px
+    rgba(79,70,229,.25);
+
+
+}
+
+
+textarea{
+
+
+    resize:none;
+
+    height:150px;
+
+}
+
+
+
+/*----------------TABLES----------------*/
+
+/*----------------VIEW LEAVES PAGE----------------*/
+
+table{
+
+    width:95%;
+    margin:40px auto;
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    background:#fff;
+
+}
+
+table th{
+
+    background:linear-gradient(135deg,#4f46e5,#6366f1);
+    color:white;
+    padding:18px;
+    font-size:17px;
+    letter-spacing:.5px;
+
+}
+
+table td{
+
+    padding:18px;
+    text-align:center;
+    vertical-align:middle;
+
+}
+
+table tr:nth-child(even){
+
+    background:#f8f9ff;
+
+}
+
+table tr:hover{
+
+    background:#eef2ff;
+    transition:.3s;
+
+}
+
+/* Links inside table */
+
+table td a{
+
+    display:inline-block;
+    margin:4px;
+    padding:8px 15px;
+    font-size:14px;
+    border-radius:8px;
+
+}
+
+/* First action button */
+
+table td a:first-child{
+
+    background:#10b981;
+
+}
+
+table td a:first-child:hover{
+
+    background:#059669;
+
+}
+
+/* Second action button */
+
+table td a:last-child{
+
+    background:#ef4444;
+
+}
+
+table td a:last-child:hover{
+
+    background:#dc2626;
+
+}
+
+/* Heading */
+
+h2{
+
+    text-align:center;
+    color:white;
+    font-size:40px;
+    margin:30px 0;
+
+}
+
+/* Back button */
+
+body>a:last-of-type{
+
+    display:block;
+    width:250px;
+    margin:35px auto;
+    text-align:center;
+
+}
+
+/* Empty table row */
+
+table td[colspan]{
+
+    font-size:18px;
+    color:#777;
+    padding:30px;
+
+}
+
+
+/*----------------STATUS----------------*/
+
+
+.pending{
+
+
+    background:#f59e0b;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-weight:bold;
+
+}
+
+
+.approved{
+
+
+    background:#10b981;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-weight:bold;
+
+}
+
+
+.rejected{
+
+
+    background:#ef4444;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+/*----------------FOOTER----------------*/
+
+
+.footer{
+
+
+    width:100%;
+
+    max-width:1300px;
+
+    margin-top:auto;
+
+    padding:25px;
+
+    text-align:center;
+
+    
+    font-size: 0.85rem;
+    background: transparent;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.15);
+
+
+}
+
+
+/*----------------ANIMATION----------------*/
+
+
+.card,
+.dashboard-card,
+form,
+table,
+.hero{
+
+
+    animation:fadeIn .7s ease;
+
+}
+
+
+@keyframes fadeIn{
+
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(30px);
+
+    }
+
+    to{
+
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+
+}
+
+
+
+
+/*----------------RESPONSIVE----------------*/
+
+
+@media(max-width:768px){
+
+body{
+
+    padding:15px;
+
+}
+
+
+h1{
+
+    font-size:35px;
+
+}
+
+
+h2{
+
+    font-size:30px;
+
+}
+
+
+.hero{
+
+    padding:50px;
+
+}
+
+
+.hero h1{
+
+    font-size:45px;
+
+}
+
+
+nav{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+
+.dashboard{
+
+    grid-template-columns:1fr;
+
+}
+
+
+form{
+
+    padding:35px;
+
+}
+
+
+button,
+a{
+
+    width:100%;
+    text-align:center;
+
+}
+
+
+table{
+
+    display:block;
+    overflow-x:auto;
+
+}
+
+
+}
+
