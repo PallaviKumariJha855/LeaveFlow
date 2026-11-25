@@ -23,25 +23,12 @@ STATIC_DIR=os.path.join(BASE_DIR,'static')
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = "django-insecure-n16=*#l096f*w46+mk^)a38ljq#j1rhb9p+sk$eupe2acs+o7s"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = True
 
-ALLOWED_HOSTS = [
-    'leaveflow-vn54.onrender.com',
-    'localhost',
-    '127.0.0.1',
-]
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://leaveflow-vn54.onrender.com',
-]
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -135,12 +122,3 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-STORAGES = {
-    "default": {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
-    },
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
